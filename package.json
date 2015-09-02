@@ -1,0 +1,37 @@
+{
+  "name": "angular-webpack-starter-kit",
+  "version": "1.0.0",
+  "description": "Angular Webpack Starter kit",
+  "main": "./app/app.js",
+  "scripts": {
+    "start": "./node_modules/.bin/webpack-dev-server --port 8090 --hot --inline --content-base build/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pierre-Alexandre Dupuy",
+  "private": "true",
+  "engines": {
+    "node": "0.12.x",
+    "npm": "2.x"
+  },
+  "dependencies": {
+    "angular": "^1.4.5",
+    "angular-animate": "^1.4.5",
+    "angular-aria": "^1.4.5",
+    "angular-material": "^0.10.1",
+    "angular-ui-router": "^0.2.15"
+  },
+  "devDependencies": {
+    "babel-core": "^5.8.23",
+    "babel-loader": "^5.3.2",
+    "babel-runtime": "^5.8.20",
+    "bootstrap": "^3.3.5",
+    "css-loader": "^0.16.0",
+    "extract-text-webpack-plugin": "^0.8.2",
+    "file-loader": "^0.8.4",
+    "postcss-loader": "^0.6.0",
+    "raw-loader": "^0.5.1",
+    "style-loader": "^0.12.3",
+    "webpack": "^1.12.0",
+    "webpack-dev-server": "^1.10.1"
+  }
+}

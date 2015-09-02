@@ -20,8 +20,22 @@ coverage
 .lock-wscript
 
 # Compiled binary addons (http://nodejs.org/api/addons.html)
-build/Release
+build/bundle.js
 
 # Dependency directory
 # https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
 node_modules
+
+# Project
+build/bundle.js
+
+# NPM
+node_modules
+npm-debug.log
+
+# Created by https://www.gitignore.io/
+
+### OSX ###
+.DS_Store
+.AppleDouble
+.LSOverride

@@ -1,0 +1,13 @@
+
+<md-content layout-padding>
+<h1>Remote</h1>
+
+<md-button md-no-ink class="md-raised md-primary" ng-click="remote.getData()" ng-disabled="remote.users">Load data</md-button>
+
+<md-progress-circular class="md-hue-2" md-mode="indeterminate" ng-show="remote.loading"></md-progress-circular>
+<ul>
+  <li ng-repeat="user in remote.users">
+    <p>{{user.name}}</p>
+  </li>
+</ul>
+</md-content>

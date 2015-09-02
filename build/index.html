@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html ng-app="app" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Webpack Angular Starter kit</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <base href="/">
+    </head>
+    <body layout="row">
+        <md-sidenav class="site-sidenav md-sidenav-left md-whiteframe-z2 md-closed ng-isolate-scope md-locked-open" md-component-id="left" md-is-locked-open="$mdMedia('gt-md')">
+          <md-toolbar class="md-theme-indigo">
+            <h1 class="md-toolbar-tools">Webpack Angular Starter Kit</h1>
+          </md-toolbar>
+          <md-content layout-padding>
+            <md-list layout="column">
+              <md-list-item>
+                  <md-button ui-sref-active="md-primary" ui-sref="index" flex>Home</md-button>
+              </md-list-item>
+              <md-divider></md-divider>
+              <md-list-item>
+                  <md-button ui-sref-active="md-primary" ui-sref="cuisine" flex>Cuisine</md-button>
+              </md-list-item>
+              <md-divider></md-divider>
+              <md-list-item>
+                  <md-button ui-sref-active="md-primary" ui-sref="remote" flex>Remote</md-button>
+              </md-list-item>
+              <md-divider></md-divider>
+            </md-list>
+          </md-content>
+        </md-sidenav>
+        <div layout="column" flex>
+          <md-content md-scroll-y flex layout-padding>
+            <div layout="column" layout-fill layout-align="top center">
+              <ui-view></ui-view>
+            </div>
+            <div flex></div>
+          </md-content>
+        </div>
+        <script src="/webpack-dev-server.js"></script>
+        <script src="bundle.js"></script>
+    </body>
+</html>

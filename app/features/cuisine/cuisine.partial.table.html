@@ -1,0 +1,18 @@
+<section class="md-whiteframe-z1">
+  <md-list>
+    <div ng-show="!data.dishes">
+        <md-subheader class="md-no-sticky">No data yet</md-subheader>
+    </div>
+    <div ng-show="data.dishes">
+    <md-subheader class="md-no-sticky">Miam !</md-subheader>
+    <md-list-item class="md-3-line" ng-repeat="dish in data.dishes">
+      <img ng-src="{{ dish.image }}" class="md-avatar" alt="{{ dish.name }}" />
+      <div class="md-list-item-text">
+        <h3>{{ dish.name }}</h3>
+        <h4>{{ dish.type }}</h4>
+        <p>{{ dish.tastiness }}</p>
+      </div>
+    </md-list-item>
+  </div>
+  </md-list>
+</section>
